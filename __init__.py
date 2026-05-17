@@ -1,18 +1,75 @@
 from .nodes.txt_reg import TxtReg, TxtRegSelect, JsonParser, JsonBuilder
 from .nodes.aichat_api import AIChatAPI
+from .nodes.txt_process import (
+    TextConcat,
+    TextSplit,
+    TextSubstring,
+    TextCase,
+    TextReplace,
+    TextTrim,
+    TextTemplate,
+    TextPad,
+    TextSearch,
+    TextLength,
+    TextJudge,
+    ListOps,
+    TextFilterLines,
+    TextWrap,
+    TextRandom,
+    TextEscape,
+    TextMultiConcat,
+)
 
 NODE_CLASS_MAPPINGS = {
+    # Original nodes
     "TxtReg": TxtReg,
     "TxtRegSelect": TxtRegSelect,
     "JsonParser": JsonParser,
     "JsonBuilder": JsonBuilder,
     "AIChatAPI": AIChatAPI,
+    # New text processing nodes
+    "TextConcat": TextConcat,
+    "TextSplit": TextSplit,
+    "TextSubstring": TextSubstring,
+    "TextCase": TextCase,
+    "TextReplace": TextReplace,
+    "TextTrim": TextTrim,
+    "TextTemplate": TextTemplate,
+    "TextPad": TextPad,
+    "TextSearch": TextSearch,
+    "TextLength": TextLength,
+    "TextJudge": TextJudge,
+    "ListOps": ListOps,
+    "TextFilterLines": TextFilterLines,
+    "TextWrap": TextWrap,
+    "TextRandom": TextRandom,
+    "TextEscape": TextEscape,
+    "TextMultiConcat": TextMultiConcat,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
+    # Original nodes
     "TxtReg": "Txt Reg",
     "TxtRegSelect": "Txt Reg Select",
     "JsonParser": "Json Parser",
     "JsonBuilder": "Json Builder",
     "AIChatAPI": "AI Chat API",
+    # New text processing nodes
+    "TextConcat": "Text Concat",
+    "TextSplit": "Text Split",
+    "TextSubstring": "Text Substring",
+    "TextCase": "Text Case",
+    "TextReplace": "Text Replace",
+    "TextTrim": "Text Trim",
+    "TextTemplate": "Text Template",
+    "TextPad": "Text Pad",
+    "TextSearch": "Text Search",
+    "TextLength": "Text Length",
+    "TextJudge": "Text Judge",
+    "ListOps": "List Ops",
+    "TextFilterLines": "Text Filter Lines",
+    "TextWrap": "Text Wrap",
+    "TextRandom": "Text Random",
+    "TextEscape": "Text Escape",
+    "TextMultiConcat": "Text Multi Concat",
 }
